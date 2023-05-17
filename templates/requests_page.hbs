@@ -1,13 +1,9 @@
 <div class="container">
     {{#if settings.request_list_beta}}
         <header class="my-activities-header">
-            <h1>{{ t 'requests' - 'brand_group_label' }}
+            <h1>{{ t 'requests' }}
             </h1>
-            <h1>
-                {{#if settings.show_brand_name}}
-                    <span aria-hidden="true">{{ help_center.name }}</span>
-                {{/if}}
-            </h1>
+            
         </header>
 
         <div id="main-content">
@@ -16,10 +12,6 @@
     {{ else }}
         <header class="my-activities-header">
             <h1>{{ t 'my_requests' }}
-                <span> - </span>
-                {{#if settings.show_brand_name}}
-                    <span aria-hidden="true">{{ help_center.name }}</span>
-                {{/if}}
             </h1>
 
             <div class="my-activities-sub-nav">
