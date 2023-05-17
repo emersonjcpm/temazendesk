@@ -14,8 +14,9 @@
         <nav class="user-nav" id="user-nav">
             <ul class="user-nav-list">
                 <li>{{ link 'community' }}</li>
-                <li><strong>
-                    {{ link 'new_request' class='submit-a-request' }}</li>
+                <li>
+                    <strong>
+                        {{ link 'new_request' class='submit-a-request' }}</li>
                 </strong>
                 {{#unless signed_in}}
                     <li>
@@ -24,25 +25,26 @@
                         {{/link}}
                     </li>
                 {{/unless}}
-                
-                
-                
+
+
                 {{!-- <li>
-                    <a href="https://sacjcpm.zendesk.com/hc/pt-br">Central de Relacionamento</a>
+                    <a href="https://sacjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com a Central de Experiência">
+                        <span>Central de Experiência</span>
+                    </a>
                 </li> --}}
                 <li>
-                    <a href="https://dadosjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de dados">
-                    <span>Dados</span> 
+                    <a href="https://dadosjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Dados">
+                        <span>Dados</span>
                     </a>
                 </li>
                 {{!-- <li>
-                    <a href="https://ominicanal.zendesk.com/hc/pt-br">Omnicanal</a>
-                </li>  --}}
-                {{!-- <li>
-                    <a href="https://jcpm.zendesk.com/hc/pt-br">Suporte e Atendimento</a>
+                    <a href="https://ominicanal.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Omnicanal"></a>
                 </li> --}}
-                
-                
+                <li>
+                    <a href="https://jcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de atendimento da NE Digital">
+                        <span>Atendimento NE Digital</span>
+                    </a>
+                </li>
 
 
             </ul>
