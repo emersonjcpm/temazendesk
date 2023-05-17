@@ -15,8 +15,8 @@
             <ul class="user-nav-list">
                 <li>{{ link 'community' }}</li>
                 <li>
-                    <strong>
-                        {{ link 'new_request' class='submit-a-request' }}</li>
+                    <strong> 
+                        {{ link 'new_request' <title>Abra aqui sua solicitação com o time de dados</title> class='submit-a-request' }}</li>
                 </strong>
                 {{#unless signed_in}}
                     <li>
@@ -32,11 +32,11 @@
                         <span>Central de Experiência</span>
                     </a>
                 </li> --}}
-                <li>
+                {{!-- <li>
                     <a href="https://dadosjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Dados">
                         <span>Dados</span>
                     </a>
-                </li>
+                </li> --}}
                 {{!-- <li>
                     <a href="https://ominicanal.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Omnicanal"></a>
                 </li> --}}
@@ -65,7 +65,7 @@
                     {{#my_profile role="menuitem"}}
                         {{ t 'profile' }}
                     {{/my_profile}}
-                    {{ link "requests" role="menuitem" }}
+                    {{ link "requests" title="Visualize..." role="menuitem" }}
                     {{#link "contributions" role="menuitem"}}
                         {{ t "activities" }}
                     {{/link}}
