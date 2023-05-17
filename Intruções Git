@@ -1,0 +1,7 @@
+Repositório = https://github.com/emersonjcpm/temazendesk.git
+
+1 - Alterar o que for necessário.
+2 - git add -A - para adicionar todos para commit.
+3 - git commit -m "Teste" - Resumir o que foi feito.
+4 - git push -u origin main - Enviar para produção
+5 - Atualizar do GIT
