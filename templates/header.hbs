@@ -15,7 +15,7 @@
             <ul class="user-nav-list">
                 <li>{{ link 'community' }}</li>
                 <li>
-                    <strong> 
+                    <strong>
                         {{ link 'new_request' class='submit-a-request' title="Abra aqui sua solicitação com o time de dados" }}</li>
                 </strong>
                 {{#unless signed_in}}
@@ -27,21 +27,28 @@
                 {{/unless}}
 
 
+                <li>
+                    <a href="https://dadosjcpm.zendesk.com/hc/pt-br/requests" title="Consulte seus tickets aqui">
+                        <span>Consultar Tickets</span>
+                    </a>
+                </li>
                 {{!-- <li>
-                    <a href="https://sacjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com a Central de Experiência">
+                    <a href="https://sacjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir ou consultar uma solicitação com a Central de Experiência">
                         <span>Central de Experiência</span>
                     </a>
                 </li> --}}
                 {{!-- <li>
-                    <a href="https://dadosjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Dados">
-                        <span>Dados</span>
+                    <a href="https://dadosjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir ou consultar uma solicitação com o time de Dados">
+                        <span>Atendimento Time de Dados</span>
                     </a>
                 </li> --}}
                 {{!-- <li>
-                    <a href="https://ominicanal.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de Omnicanal"></a>
+                    <a href="https://ominicanal.zendesk.com/hc/pt-br" title="Acesse aqui para abrir ou consultar uma solicitação com o time de Omnicanal">
+                        <span>Atendimento Omnicanal</span>
+                    </a>
                 </li> --}}
                 <li>
-                    <a href="https://jcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir uma solicitação com o time de atendimento da NE Digital">
+                    <a href="https://jcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir ou consultar uma solicitação com o time de atendimento da NE Digital">
                         <span>Atendimento NE Digital</span>
                     </a>
                 </li>
