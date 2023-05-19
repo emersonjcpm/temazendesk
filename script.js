@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (filter.children.length > 6) {
       // Display the show more button
       var trigger = filter.querySelector(".see-all-filters");
-      trigger.setAttribute("aria-hidden", false);
+      trigger.setAttribute("aria-hidden", true);
 
       // Add event handler for click
       trigger.addEventListener("click", function(e) {
