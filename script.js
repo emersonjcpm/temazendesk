@@ -280,11 +280,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Submit organization form in the request page
   // var requestOrganisationSelect = document.querySelector('#request-organization select');
 
-  // if (requestOrganisationSelect) {
-  //   requestOrganisationSelect.addEventListener('change', function() {
-  //     closest(this, 'form').submit();
-  //   });
-  // }
+  if (requestOrganisationSelect) {
+    requestOrganisationSelect.addEventListener('change', function() {
+      closest(this, 'form').submit();
+    });
+  }
 
   // If multibrand search has more than 5 help centers or categories collapse the list
   var multibrandFilterLists = document.querySelectorAll(".multibrand-filter-list");
