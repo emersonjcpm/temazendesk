@@ -1,3 +1,11 @@
+{{#script}}
+  var all_requests = [];
+  {{#each brands}}
+    all_requests = all_requests.concat(requests[{{@index}}]);
+  {{/each}}
+{{/script}}
+
+
 <div class="container">
     {{#if settings.request_list_beta}}
         <header class="my-activities-header">
@@ -100,7 +108,7 @@
                     </thead>
 
                     <tbody>
-                        {{#each requests}}
+                        {{#each all_requests}}
                             <tr {{#is status 'closed'}} class="request-closed" {{/is}}>
                                 <td class="request-info requests-table-info">
                                     <a href="{{ url }}" class="striped-list-title" title="{{ subject }}">
@@ -135,7 +143,6 @@
                                     </span>
                                 </td>
                             </tr>
-                        {{/each}}
                     </tbody>
                 </table>
             {{/if}}
