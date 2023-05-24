@@ -74,13 +74,12 @@
 
                 {{!-- configurações para o projeto do Omnicanal --}}
 
-                 <li>
+                 {{!-- <li>
                     <a href="https://ominicanal.zendesk.com/hc/pt-br/requests" title="Consulte seus tickets aqui">
                         <span>Consultar Tickets</span>
                     </a>
                 </li>
-                
-                {{!-- <li>
+                <li>
                     <a href="https://sacjcpm.zendesk.com/hc/pt-br" title="Acesse aqui para abrir ou consultar uma solicitação com a Central de Experiência">
                         <span>Atendimento Central de Experiência</span>
                     </a>
@@ -192,7 +191,8 @@
                     <li class="nav-divider"></li>
                 {{/if}}
                 <li class="item">{{ link 'community' role="menuitem" }}</li>
-                <li class="item">{{ link 'new_request' role="menuitem" class='submit-a-request' }}</li>
+                <li class="item">{{ link 'new_request' title="Abra aqui sua solicitação com o time de dados" role="menuitem" class='submit-a-request' }}</li>
+                {{!-- <li class="item">{{ link 'new_request' role="menuitem" class='submit-a-request' }}</li> --}}
                 <li class="nav-divider"></li>
                 {{#if signed_in}}
                     <li class="item">
