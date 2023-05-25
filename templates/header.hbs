@@ -16,7 +16,7 @@
                 <li>{{ link 'community' }}</li>
                 <li>
                     <strong>
-                        {{ link 'new_request' class='submit-a-request' title="Abra aqui sua solicitação com o time de dados" }}</li>
+                        {{ link 'new_request' class='submit-a-request' }}</li>
                 </strong>
                 {{#unless signed_in}}
                     <li>
@@ -191,7 +191,7 @@
                     <li class="nav-divider"></li>
                 {{/if}}
                 <li class="item">{{ link 'community' role="menuitem" }}</li>
-                <li class="item">{{ link 'new_request' title="Abra aqui sua solicitação com o time de dados" role="menuitem" class='submit-a-request' }}</li>
+                <li class="item">{{ link 'new_request' role="menuitem" class='submit-a-request' }}</li>
                 {{!-- <li class="item">{{ link 'new_request' role="menuitem" class='submit-a-request' }}</li> --}}
                 <li class="nav-divider"></li>
                 {{#if signed_in}}
